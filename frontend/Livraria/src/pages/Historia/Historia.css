@@ -1,0 +1,224 @@
+/* História Page Styles */
+
+.historia-main {
+  padding: 0;
+}
+
+/* Hero Section */
+.historia-hero {
+  background: linear-gradient(135deg, var(--kuro-aoi-03) 0%, var(--kuro-aoi-02) 100%);
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.historia-hero h1 {
+  font-family: var(--default-font);
+  font-size: 3rem;
+  margin: 0 0 16px;
+  color: #fff;
+  text-shadow: var(--shadow-text), 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.historia-hero p {
+  font-size: 1.2rem;
+  margin: 0;
+  opacity: 0.95;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Content Section */
+.historia-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.historia-section {
+  margin-bottom: 60px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.historia-section:last-child {
+  margin-bottom: 0;
+}
+
+.historia-section h2 {
+  font-family: var(--default-font);
+  font-size: 2rem;
+  color: var(--kuro-aoi-03);
+  margin: 0 0 20px;
+  text-shadow: var(--shadow-text);
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--vintage-brown05);
+}
+
+.historia-section p {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0 0 16px;
+}
+
+.historia-section p:last-of-type {
+  margin-bottom: 0;
+}
+
+.historia-timeline {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 32px;
+  align-items: flex-start;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(181, 145, 61, 0.05), rgba(181, 145, 61, 0.02));
+  border-radius: 8px;
+  border-left: 4px solid var(--vintage-brown03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-year {
+  font-family: var(--default-font);
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--vintage-brown03);
+  text-shadow: var(--shadow-text);
+}
+
+.timeline-content h3 {
+  font-family: var(--default-font);
+  font-size: 1.3rem;
+  color: var(--kuro-aoi-03);
+  margin: 0 0 8px;
+  text-shadow: var(--shadow-text);
+}
+
+.timeline-content p {
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, #fafaf8, #fff);
+  padding: 28px 24px;
+  border-radius: 8px;
+  border-top: 4px solid var(--vintage-brown03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.highlight-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.highlight-box h3 {
+  font-family: var(--default-font);
+  font-size: 1.3rem;
+  color: var(--kuro-aoi-03);
+  margin: 0 0 12px;
+  text-shadow: var(--shadow-text);
+}
+
+.highlight-box p {
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.quote-section {
+  background: linear-gradient(135deg, var(--vintage-brown07), var(--vintage-brown08));
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 40px 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.quote-section blockquote {
+  font-family: var(--default-font);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--kuro-aoi-02);
+  margin: 0 0 12px;
+  text-shadow: var(--shadow-text);
+}
+
+.quote-section p {
+  color: var(--kuro-aoi-02);
+  margin: 0;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .historia-hero {
+    padding: 40px 20px;
+  }
+
+  .historia-hero h1 {
+    font-size: 2rem;
+  }
+
+  .historia-content {
+    padding: 40px 20px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .timeline-year {
+    font-size: 1.4rem;
+  }
+
+  .historia-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-section {
+    padding: 24px 20px;
+  }
+
+  .quote-section blockquote {
+    font-size: 1.2rem;
+  }
+}
